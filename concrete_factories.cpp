@@ -3,17 +3,17 @@
 #include "cancer_units.h"
 
 Unit* ForsenFactory::constructUnitById(int id) {
-    if (id == 0) {
+    if (id == ForsenUnits::kNaziMod) {
         return new Nazimod;
     }
-    else if (id == 1) {
+    else if (id == ForsenUnits::kBruceU) {
         return new BruceU;
     }
     else throw;
 }
 
 Unit* CancerFactory::constructUnitById(int id) {
-    if (id == 0) {
+    if (id == CancerUnits::kForsenRedSonic) {
         return new ForsenRedSonic;
     }
     else throw;

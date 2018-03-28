@@ -3,6 +3,10 @@
 
 #include "unit.h"
 
+enum CancerUnits {
+    kForsenRedSonic
+};
+
 class ForsenRedSonic : public Unit{
     void think() override;
 };

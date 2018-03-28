@@ -3,6 +3,11 @@
 
 #include "unit.h"
 
+enum ForsenUnits {
+    kNaziMod,
+    kBruceU
+};
+
 class Nazimod : public Unit{
     void think() override ;
 };
