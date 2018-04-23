@@ -7,7 +7,7 @@ enum CancerUnits {
     kForsenRedSonic
 };
 
-class ForsenRedSonic : public Unit{
+struct ForsenRedSonic : public Unit{
     void think() override;
 };
 

@@ -1,8 +1,9 @@
 #ifndef TP_PROJECT_UNIT_H
 #define TP_PROJECT_UNIT_H
 
-struct Unit {
-    virtual void think() =0;
+#include "Actor.h"
+
+class Unit : public Actor {
 };
 
 #endif //TP_PROJECT_UNIT_H

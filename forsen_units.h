@@ -8,11 +8,11 @@ enum ForsenUnits {
     kBruceU
 };
 
-class Nazimod : public Unit{
+struct Nazimod : public Unit{
     void think() override ;
 };
 
-class BruceU : public Unit{
+struct BruceU : public Unit{
     void think() override;
 };
 
