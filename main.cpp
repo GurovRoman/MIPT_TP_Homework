@@ -1,12 +1,12 @@
 #include "Game.h"
+#include "libtcod/console_types.h"
 
 int main() {
     Game game;
-    TCODSystem::setFps(2);
+    TCODSystem::setFps(60);
     while (!TCODConsole::isWindowClosed()) {
         game.update();
         game.render();
-        TCODConsole::flush();
     }
     return 0;
 }

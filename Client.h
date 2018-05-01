@@ -11,6 +11,7 @@ private:
 
 public:
     Client();
+    ~Client();
     void think();
 };
 

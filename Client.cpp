@@ -1,7 +1,11 @@
 #include "Client.h"
 
-Client::Client() : selection() {
+Client::Client() {
     unit_factory = new ForsenFactory;
+}
+
+Client::~Client() {
+    delete unit_factory;
 }
 
 void Client::think() {

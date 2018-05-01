@@ -6,10 +6,14 @@
 #include "Client.h"
 
 class Game {
+private:
+    void processInputEvents();
 public:
     Client client;
     TCODList<Actor *> actors;
-    //Map *map;
+    TCODList<TCOD_key_t> key_events;
+    //Map map;
+    //GUI gui;
 
     Game();
     ~Game();
